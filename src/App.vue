@@ -1,13 +1,17 @@
 <template>
-   <IfDome/>
-   <ListShow/>
+  <header>
+
+  </header>
+  <main>
+    <homepage/>
+  </main>
 </template>
 
 
-<script setup>
-import ListShow from '@/components/ListShow.vue'
-import IfDome from '@/components/IfDome.vue'
 
+
+<script setup>
+import homepage from "@/components/HomePage/homepage.vue"
 </script>
 
 
