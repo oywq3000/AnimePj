@@ -2,10 +2,13 @@
   <div class="header_bar">
     <div class="header_min_bar_top">
     <ul class="right_entry">
-        <li class="liDisplay"><a href="">首页</a></li>
+        <li class="liDisplay"><a href="#">首页</a></li>
         <li class="liDisplay">番剧</li>
         <li class="liDisplay">直播</li>
     </ul>
+    <div class="header_search">
+      <form class="search_form"></form>
+    </div>
     </div>
   </div>
   <div class="header_channel"></div>
@@ -13,6 +16,9 @@
 </template>
 <script>
 </script>
+
+
+
 <style>
 .header_bar {
   background: blue;
@@ -33,6 +39,7 @@
     background: rgb(138, 234, 101);
   width: 1920px;
   height: 70px;
+  display: flex;
 }
 .right_entry{
     background: rgb(202, 222, 194);
@@ -50,5 +57,19 @@
   align-self: center;
   margin: 20px;
 
+}
+.header_search{
+  background: rgb(95, 82, 214);
+  width: 487px;
+  height: 70px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+.search_form{
+    width: 250px;
+    height: 40px;
+    border-radius: 8xp;
+    background: red;
 }
 </style>
