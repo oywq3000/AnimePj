@@ -7,7 +7,14 @@
         <li class="liDisplay">直播</li>
     </ul>
     <div class="header_search">
-      <form class="search_form"></form>
+      <form class="search_form">
+        <div class="search_content">
+          <input type="text" class="search_input" ref="search_ex">
+        </div>
+        <div class="search_btn">
+          
+        </div>
+      </form>
     </div>
     </div>
   </div>
@@ -15,11 +22,12 @@
   <div class="header_layout"></div>
 </template>
 <script>
+
 </script>
 
-
-
 <style>
+/*#region header*/
+/*#region left_entry*/
 .header_bar {
   background: blue;
   width: 1920px;
@@ -58,6 +66,8 @@
   margin: 20px;
 
 }
+/*#endregion left_entry*/
+/*#region search*/
 .header_search{
   background: rgb(95, 82, 214);
   width: 487px;
@@ -69,7 +79,38 @@
 .search_form{
     width: 250px;
     height: 40px;
-    border-radius: 8xp;
-    background: red;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+.search_content{
+  width: 200px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background-color: red;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.search_input{
+  width: 168px;
+  height: 20px;
+  border: 0;
+  margin:8px
+}
+.search_btn{
+  width: 32px;
+  height: 32px;
+  background: green;
+  border-radius: 10px;
+}
+/*#endregion*/
+/*#endregion*/
+</style>
+<style>
+
 </style>
