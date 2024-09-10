@@ -11,7 +11,7 @@
         <div class="search_content">
           <input type="text" class="search_input" ref="search_ex">
         </div>
-        <div class="search_btn">
+        <div class="search_btn" @click="onClick">
           
         </div>
       </form>
@@ -22,7 +22,16 @@
   <div class="header_layout"></div>
 </template>
 <script>
+export default{
+  data(){
+    return {}
+  },
+  methods:{
+    onClick(){
 
+    }
+  }
+}
 </script>
 
 <style>
@@ -107,6 +116,7 @@
   height: 32px;
   background: green;
   border-radius: 10px;
+  cursor: pointer;
 }
 /*#endregion*/
 /*#endregion*/
