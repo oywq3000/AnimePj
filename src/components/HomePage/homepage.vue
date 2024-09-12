@@ -28,7 +28,7 @@ export default{
   },
   methods:{
     onClick(){
-
+    console.log('点到了搜索')
     }
   }
 }
@@ -117,6 +117,13 @@ export default{
   background: green;
   border-radius: 10px;
   cursor: pointer;
+}
+.search_btn:hover {
+    background-color: #0056b3; /* 悬停时背景色 */
+}
+
+.search_btn:active {
+    background-color: #004080; /* 按下时背景色 */
 }
 /*#endregion*/
 /*#endregion*/
